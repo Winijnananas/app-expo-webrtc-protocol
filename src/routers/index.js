@@ -6,6 +6,7 @@ import AboutScreen from '../screens/AboutScreen';
 import BottomTab from '../navigations/bottomTab';
 import CustomAlert from '../components/CustomAlert';
 import CalledServiceScreen from '../screens/CalledServiceScreen';
+import CalledPage from '../screens/CalledPage';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +18,7 @@ const Index = () => {
       <Stack.Screen name="Contact" component={ContactScreen} />
       <Stack.Screen name="About" component={AboutScreen} />
       <Stack.Screen name="Alert" component={CustomAlert} />
-      <Stack.Screen name="Called" component={CalledServiceScreen} />
+      <Stack.Screen name="New" component={CalledPage} />
     </Stack.Navigator>
   );
 };

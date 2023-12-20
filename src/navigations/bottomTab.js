@@ -5,6 +5,7 @@ import HomeScreen from "../screens/HomeScreen";
 import ContactScreen from "../screens/ContactScreen";
 import AboutScreen from "../screens/AboutScreen";
 import CalledServiceScreen from "../screens/CalledServiceScreen";
+import CalledPage from "../screens/CalledPage";
 
 
 //importScreen pages
@@ -60,14 +61,14 @@ const bottomTab = () => {
             />
 
             <Tab.Screen
-                name='Called'
-                component={CalledServiceScreen}
+                name='New'
+                component={CalledPage}
                 options={{
                     tabBarShowLabel: true,
                     tabBarIcon: ({ color, size }) => (
                         // <Icon solid name="id-card" color={color} size={size} />
                         //<MaterialCommunityIcons name="account" color={color} size={size} />
-                        <MaterialCommunityIcons name="question" color={color} size={size} />
+                        <MaterialCommunityIcons name="plane" color={color} size={size} />
                         
                     ),
                 }}
