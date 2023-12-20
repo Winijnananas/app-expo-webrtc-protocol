@@ -4,6 +4,8 @@ import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import HomeScreen from "../screens/HomeScreen";
 import ContactScreen from "../screens/ContactScreen";
 import AboutScreen from "../screens/AboutScreen";
+import CalledServiceScreen from "../screens/CalledServiceScreen";
+
 
 //importScreen pages
 
@@ -52,6 +54,20 @@ const bottomTab = () => {
                         // <Icon solid name="id-card" color={color} size={size} />
                         //<MaterialCommunityIcons name="account" color={color} size={size} />
                         <MaterialCommunityIcons name="format-list-bulleted" color={color} size={size} />
+                        
+                    ),
+                }}
+            />
+
+            <Tab.Screen
+                name='Called'
+                component={CalledServiceScreen}
+                options={{
+                    tabBarShowLabel: true,
+                    tabBarIcon: ({ color, size }) => (
+                        // <Icon solid name="id-card" color={color} size={size} />
+                        //<MaterialCommunityIcons name="account" color={color} size={size} />
+                        <MaterialCommunityIcons name="question" color={color} size={size} />
                         
                     ),
                 }}
